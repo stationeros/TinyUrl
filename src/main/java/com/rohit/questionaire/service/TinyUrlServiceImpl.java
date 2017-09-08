@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import org.springframework.stereotype.Service;
 
 import com.google.common.hash.Hashing;
-import com.rohit.questionaire.RedirectUrl;
+import com.rohit.questionaire.model.RedirectUrl;
 import com.rohit.questionaire.model.TinyUrl;
 import com.rohit.questionaire.repository.IinMemoryUrlRepository;
 import com.rohit.questionaire.util.TinyUrlUtil;

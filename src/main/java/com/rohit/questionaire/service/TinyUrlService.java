@@ -1,6 +1,6 @@
 package com.rohit.questionaire.service;
 
-import com.rohit.questionaire.RedirectUrl;
+import com.rohit.questionaire.model.RedirectUrl;
 import com.rohit.questionaire.model.TinyUrl;
 
 public interface TinyUrlService {

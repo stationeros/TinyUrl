@@ -1,4 +1,4 @@
-package com.rohit.questionaire;
+package com.rohit.questionaire.model;
 
 public class RedirectUrl {
 

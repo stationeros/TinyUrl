@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rohit.questionaire.RedirectUrl;
+import com.rohit.questionaire.model.RedirectUrl;
 import com.rohit.questionaire.model.TinyUrl;
 import com.rohit.questionaire.service.TinyUrlService;
 
