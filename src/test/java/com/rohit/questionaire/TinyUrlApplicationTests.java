@@ -25,12 +25,12 @@ public class TinyUrlApplicationTests {
 	@Test
 	public void testController() {
 		String url = "https://www.amazon.com/gp/help/customer/display.html/?nodeId=10683361";
-		String expected = "https://www.amazon.com/bebc80a9";
+		String expected = "https://www.amazon.com/bebc80";
 		ResponseEntity<TinyUrl> entity = controller.createTinyUrl(url);
 		assertEquals(expected, entity.getBody().getTinyUrl());
 		
 		//Merging these two as I am using an inMemoryDB.
-		String id = "bebc80a9";
+		String id = "bebc80";
 		String expectedUrl = "https://www.amazon.com/gp/help/customer/display.html/?nodeId=10683361";
 		ResponseEntity<RedirectUrl> ety = controller.redirectToUrl(id);
 		assertEquals(expectedUrl, ety.getBody().getUrl());

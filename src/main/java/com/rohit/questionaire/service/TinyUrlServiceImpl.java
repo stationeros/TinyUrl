@@ -29,6 +29,7 @@ public class TinyUrlServiceImpl implements TinyUrlService {
 			try {
 				// Using google Guava Hashing method here.
 				id = Hashing.murmur3_32().hashString(url, StandardCharsets.UTF_8).toString();
+				id = id.substring(0, 6);
 				inMemoryUrlStoreRepository.persistUrl(id, url);
 				URL requestUrl = new URL(url);
 				String protocol = requestUrl.getProtocol();
